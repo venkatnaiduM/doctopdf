@@ -1,0 +1,6 @@
+# github.com/ConvertAPI/convertapi-go v0.0.0-20240828091707-02fcb9e18965
+## explicit; go 1.22.2
+github.com/ConvertAPI/convertapi-go/pkg
+github.com/ConvertAPI/convertapi-go/pkg/config
+github.com/ConvertAPI/convertapi-go/pkg/lib
+github.com/ConvertAPI/convertapi-go/pkg/param
