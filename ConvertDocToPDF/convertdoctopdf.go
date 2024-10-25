@@ -15,14 +15,12 @@ func ConvertDocToPDF(inputFilePath string, outputFilePath string) error {
 		param.NewPath("File", inputFilePath, nil),
 	).ToPath(outputFilePath)
 	if err != nil {
-		return fmt.Errorf("conversion failed: %v", err)
+		return fmt.Errorf("conversion failed Correct Your Path")
 	}
 	fileInfo, _ := os.Stat(outputFilePath)
 
 	if fileInfo.Size() > 150*1024 {
-		return fmt.Errorf("size is more than 150kb and the size is: %d bytes", fileInfo.Size())
-	} else {
-		fmt.Println("Size is less than 150kb and the size is ", fileInfo.Size())
+		return fmt.Errorf("size is more than 150kb")
 	}
 	return nil
 }
